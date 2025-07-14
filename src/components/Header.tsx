@@ -29,7 +29,6 @@ const Header = () => {
 
     window.addEventListener('scroll', handleScroll);
     
-    // Close menu when resizing from mobile to desktop
     const handleResize = () => {
       if (window.innerWidth >= 768 && isMenuOpen) {
         setIsMenuOpen(false);
@@ -44,7 +43,6 @@ const Header = () => {
     };
   }, [isMenuOpen]);
 
-  // Prevent body scrolling when mobile menu is open
   useEffect(() => {
     if (isMobile) {
       if (isMenuOpen) {
@@ -60,10 +58,10 @@ const Header = () => {
   }, [isMenuOpen, isMobile]);
 
   const menuItems: MenuItem[] = [
-    { name: 'Início', href: '#início' },
-    { name: 'Sobre Nós', href: '#sobre-nós' },
-    { name: 'Serviços', href: '#serviços' },
-    { name: 'Planos', href: '#planos' },
+    { name: 'Início', href: '#inicio' },
+    { name: 'Sobre', href: '#sobre' },
+    { name: 'Serviços', href: '#servicos' },
+    { name: 'Localização', href: '#localizacao' },
     { name: 'Contato', href: '#contato' }
   ];
 
@@ -72,7 +70,7 @@ const Header = () => {
       className={cn(
         'fixed w-full z-50 transition-all duration-300 ease-in-out',
         scrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' 
+          ? 'bg-white/95 backdrop-blur-md shadow-lg py-3' 
           : 'bg-transparent py-4'
       )}
     >

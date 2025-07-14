@@ -1,53 +1,47 @@
 
-import { Calculator, BarChart3, FileText, Users, PieChart, Building } from 'lucide-react';
+import { Eye, Glasses, Scan, ShieldCheck } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 import AnimatedSection from './AnimatedSection';
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Calculator,
-      title: 'Contabilidade',
-      description: 'Serviços completos de contabilidade para empresas de todos os portes, com demonstrativos claros e precisos.'
+      icon: Eye,
+      title: 'Exames de Vista Completos',
+      description: 'Avaliação completa da sua saúde visual com equipamentos modernos e profissionais especializados para garantir o melhor diagnóstico.',
+      features: ['Teste de acuidade visual', 'Medição de grau', 'Avaliação da saúde ocular', 'Orientações personalizadas']
     },
     {
-      icon: BarChart3,
-      title: 'Fiscal',
-      description: 'Gerenciamento de obrigações fiscais, apuração de impostos e planejamento tributário para otimizar a carga fiscal.'
+      icon: Glasses,
+      title: 'Armações Exclusivas',
+      description: 'Ampla variedade de armações modernas, clássicas e estilosas das melhores marcas, com opções para todos os gostos e idades.',
+      features: ['Marcas renomadas', 'Designs modernos', 'Armações infantis', 'Óculos de sol']
     },
     {
-      icon: FileText,
-      title: 'Departamento Pessoal',
-      description: 'Gestão completa da folha de pagamento, admissões, demissões e todas as rotinas trabalhistas.'
+      icon: Scan,
+      title: 'Lentes Especializadas',
+      description: 'Lentes de alta qualidade com tecnologia avançada para proporcionar o máximo conforto e nitidez na sua visão.',
+      features: ['Lentes antirreflexo', 'Proteção UV', 'Lentes progressivas', 'Lentes para computador']
     },
     {
-      icon: Building,
-      title: 'Abertura de Empresa',
-      description: 'Auxílio completo na abertura, alteração ou encerramento de empresas, com agilidade e segurança.'
-    },
-    {
-      icon: PieChart,
-      title: 'Consultoria Empresarial',
-      description: 'Análise financeira, planejamento estratégico e apoio na tomada de decisões para o crescimento do seu negócio.'
-    },
-    {
-      icon: Users,
-      title: 'Societário',
-      description: 'Elaboração e alteração de contratos sociais, atas e documentos societários conforme a legislação vigente.'
+      icon: ShieldCheck,
+      title: 'Garantia e Suporte',
+      description: 'Acompanhamento completo pós-venda com garantia e suporte técnico para ajustes e manutenção dos seus óculos.',
+      features: ['Garantia de qualidade', 'Ajustes gratuitos', 'Limpeza profissional', 'Suporte técnico']
     }
   ];
 
   return (
-    <section id="serviços" className="py-24 bg-gradient-to-b from-blue-50 to-white">
+    <section id="servicos" className="py-20 bg-white">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Nossos Serviços</h2>
           <p className="section-subtitle">
-            Oferecemos soluções completas para atender todas as necessidades da sua empresa
+            Oferecemos soluções completas para cuidar da sua saúde visual com qualidade e profissionalismo
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
           {services.map((service, index) => (
             <AnimatedSection 
               key={service.title} 
@@ -57,16 +51,30 @@ const ServicesSection = () => {
               <ServiceCard 
                 icon={service.icon} 
                 title={service.title} 
-                description={service.description} 
+                description={service.description}
+                features={service.features}
               />
             </AnimatedSection>
           ))}
         </div>
 
         <AnimatedSection className="text-center mt-16">
-          <a href="#contato" className="btn-primary inline-block">
-            Solicite um orçamento
-          </a>
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-gray-800 font-heading">
+              Pronto para cuidar da sua visão?
+            </h3>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Agende sua consulta hoje mesmo e descubra como podemos ajudar você a enxergar melhor
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a href="#contato" className="btn-primary">
+                Agendar Consulta
+              </a>
+              <a href="tel:+5511969543234" className="btn-secondary">
+                Ligar Agora
+              </a>
+            </div>
+          </div>
         </AnimatedSection>
       </div>
     </section>

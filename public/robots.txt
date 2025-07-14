@@ -1,0 +1,13 @@
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://oticasmalu.com.br/sitemap.xml
+
+# Block unnecessary paths
+Disallow: /admin/
+Disallow: /login/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/

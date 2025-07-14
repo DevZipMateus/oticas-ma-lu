@@ -20,7 +20,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
+				sans: ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
+				heading: ['Poppins', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -126,6 +127,14 @@ export default {
 						transform: 'translateX(0)',
 						opacity: '1'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
 				}
 			},
 			animation: {
@@ -134,7 +143,8 @@ export default {
 				'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
 				'fade-in': 'fade-in 0.4s ease-out forwards',
 				'slide-in-right': 'slide-in-right 0.5s ease-out forwards',
-				'slide-in-left': 'slide-in-left 0.5s ease-out forwards'
+				'slide-in-left': 'slide-in-left 0.5s ease-out forwards',
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},

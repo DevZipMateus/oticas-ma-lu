@@ -1,108 +1,102 @@
 
-import { Facebook, Instagram, Linkedin, Twitter, Calendar, FileText, Calculator, Phone, Mail, MapPin } from 'lucide-react';
+import { Eye, Instagram, Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-  
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-16">
+    <footer className="bg-gray-900 text-white py-12">
+      <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">Contabilify</h3>
-            <p className="text-gray-400 mb-6">
-              Soluções contábeis completas para empresas de todos os portes, com foco em qualidade e resultados.
+          {/* Logo e Descrição */}
+          <div className="space-y-4">
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/08cb2c1d-f8b4-42cd-97c3-25f91654de32.png" 
+                alt="Óticas Ma & Lu" 
+                className="h-12 w-12"
+              />
+              <div>
+                <h3 className="text-xl font-bold font-heading">Óticas Ma & Lu</h3>
+                <p className="text-sm text-gray-400">Cuidando da sua visão</p>
+              </div>
+            </div>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Oferecemos cuidado, atenção e qualidade para sua saúde visual com 
+              profissionais especializados e armações exclusivas.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
+          </div>
+
+          {/* Links Rápidos */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold font-heading">Links Rápidos</h4>
+            <ul className="space-y-2">
+              <li><a href="#inicio" className="text-gray-300 hover:text-secondary transition-colors">Início</a></li>
+              <li><a href="#sobre" className="text-gray-300 hover:text-secondary transition-colors">Sobre</a></li>
+              <li><a href="#servicos" className="text-gray-300 hover:text-secondary transition-colors">Serviços</a></li>
+              <li><a href="#localizacao" className="text-gray-300 hover:text-secondary transition-colors">Localização</a></li>
+              <li><a href="#contato" className="text-gray-300 hover:text-secondary transition-colors">Contato</a></li>
+            </ul>
+          </div>
+
+          {/* Serviços */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold font-heading">Nossos Serviços</h4>
+            <ul className="space-y-2">
+              <li className="text-gray-300 text-sm">Exames de Vista</li>
+              <li className="text-gray-300 text-sm">Armações Exclusivas</li>
+              <li className="text-gray-300 text-sm">Lentes Especializadas</li>
+              <li className="text-gray-300 text-sm">Óculos de Sol</li>
+              <li className="text-gray-300 text-sm">Óculos Infantis</li>
+            </ul>
+          </div>
+
+          {/* Contato */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold font-heading">Contato</h4>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <MapPin className="h-4 w-4 text-secondary flex-shrink-0" />
+                <span className="text-gray-300 text-sm">Estrada Água Chata, 888</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="h-4 w-4 text-secondary flex-shrink-0" />
+                <a href="tel:+5511969543234" className="text-gray-300 hover:text-secondary transition-colors text-sm">
+                  (11) 96954-3234
+                </a>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="h-4 w-4 text-secondary flex-shrink-0" />
+                <a href="mailto:maelu.oticas@gmail.com" className="text-gray-300 hover:text-secondary transition-colors text-sm break-all">
+                  maelu.oticas@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Instagram className="h-4 w-4 text-secondary flex-shrink-0" />
+                <a 
+                  href="https://www.instagram.com/maeluoticas" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-secondary transition-colors text-sm"
+                >
+                  @maeluoticas
+                </a>
+              </div>
             </div>
           </div>
-          
-          <div>
-            <h3 className="text-xl font-bold mb-4">Serviços</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="#serviços" className="hover:text-white transition-colors">Contabilidade</a></li>
-              <li><a href="#serviços" className="hover:text-white transition-colors">Fiscal</a></li>
-              <li><a href="#serviços" className="hover:text-white transition-colors">Departamento Pessoal</a></li>
-              <li><a href="#serviços" className="hover:text-white transition-colors">Abertura de Empresa</a></li>
-              <li><a href="#serviços" className="hover:text-white transition-colors">Consultoria Empresarial</a></li>
-              <li><a href="#serviços" className="hover:text-white transition-colors">Planejamento Tributário</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-bold mb-4">Links Úteis</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-white transition-colors flex items-center">
-                  <Calendar className="h-4 w-4 mr-2" />
-                  Agenda Tributária
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors flex items-center">
-                  <FileText className="h-4 w-4 mr-2" />
-                  Tabelas Práticas
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors flex items-center">
-                  <Calculator className="h-4 w-4 mr-2" />
-                  Calculadoras
-                </a>
-              </li>
-              <li><a href="#" className="hover:text-white transition-colors">Receita Federal</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Previdência Social</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">FGTS</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-bold mb-4">Contato</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li className="flex items-start">
-                <div className="w-5 h-5 mt-1 mr-3 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0">
-                  <Phone className="h-3 w-3" />
-                </div>
-                <div>
-                  <p>(11) 5555-5555</p>
-                  <p>(11) 98765-4321</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="w-5 h-5 mt-1 mr-3 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0">
-                  <Mail className="h-3 w-3" />
-                </div>
-                <div>
-                  <p>contato@contabilify.com.br</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="w-5 h-5 mt-1 mr-3 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="h-3 w-3" />
-                </div>
-                <div>
-                  <p>Av. Paulista, 1000 - Bela Vista</p>
-                  <p>São Paulo - SP, 01310-000</p>
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
-        
-        <div className="border-t border-gray-800 mt-12 pt-8 text-gray-400 text-sm text-center">
-          <p>&copy; {currentYear} Contabilify. Todos os direitos reservados.</p>
+
+        {/* Rodapé Inferior */}
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-gray-400 text-sm text-center md:text-left">
+              © 2024 Óticas Ma & Lu. Todos os direitos reservados.
+            </p>
+            <p className="text-gray-400 text-sm text-center md:text-right">
+              <span className="inline-flex items-center space-x-1">
+                <Eye className="h-4 w-4" />
+                <span>Cuidar da sua visão é a nossa missão</span>
+              </span>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
