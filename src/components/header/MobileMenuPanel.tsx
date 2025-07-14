@@ -1,4 +1,3 @@
-
 import { X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { MenuItem } from "./types";
@@ -21,7 +20,7 @@ const MobileMenuPanel = ({ isMenuOpen, onClose, menuItems }: MobileMenuPanelProp
       <div className="flex items-center justify-between p-6 border-b">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/08cb2c1d-f8b4-42cd-97c3-25f91654de32.png" 
+            src="/lovable-uploads/d93cafa4-e948-4373-af4f-5e783db0b889.png" 
             alt="Óticas Ma & Lu" 
             className="h-10 w-10 mr-3"
           />

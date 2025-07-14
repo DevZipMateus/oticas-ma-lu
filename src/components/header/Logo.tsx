@@ -9,7 +9,7 @@ const Logo = ({ scrolled }: LogoProps) => {
   return (
     <a href="#inicio" className="flex items-center z-10 relative">
       <img 
-        src="/lovable-uploads/08cb2c1d-f8b4-42cd-97c3-25f91654de32.png" 
+        src="/lovable-uploads/d93cafa4-e948-4373-af4f-5e783db0b889.png" 
         alt="Óticas Ma & Lu - Logo" 
         className={cn(
           "transition-all duration-300",
