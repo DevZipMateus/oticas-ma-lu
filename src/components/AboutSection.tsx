@@ -1,24 +1,33 @@
+
 import { Eye, Users, Award, Heart } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+
 const AboutSection = () => {
-  const features = [{
-    icon: Eye,
-    title: 'Especialistas Qualificados',
-    description: 'Profissionais com anos de experiência em saúde visual'
-  }, {
-    icon: Users,
-    title: 'Atendimento Personalizado',
-    description: 'Cada cliente recebe atenção individual e cuidado especial'
-  }, {
-    icon: Award,
-    title: 'Produtos de Qualidade',
-    description: 'Armações e lentes das melhores marcas do mercado'
-  }, {
-    icon: Heart,
-    title: 'Cuidado Completo',
-    description: 'Acompanhamento desde o exame até a entrega dos óculos'
-  }];
-  return <section id="sobre" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+  const features = [
+    {
+      icon: Eye,
+      title: 'Especialistas Qualificados',
+      description: 'Profissionais com anos de experiência em saúde visual'
+    },
+    {
+      icon: Users,
+      title: 'Atendimento Personalizado',
+      description: 'Cada cliente recebe atenção individual e cuidado especial'
+    },
+    {
+      icon: Award,
+      title: 'Produtos de Qualidade',
+      description: 'Armações e lentes das melhores marcas do mercado'
+    },
+    {
+      icon: Heart,
+      title: 'Cuidado Completo',
+      description: 'Acompanhamento desde o exame até a entrega dos óculos'
+    }
+  ];
+
+  return (
+    <section id="sobre" className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Sobre a Óticas Ma & Lu</h2>
@@ -31,7 +40,11 @@ const AboutSection = () => {
           <AnimatedSection animation="slide-in-left">
             <div className="relative">
               <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
-                <img alt="Interior da Óticas Ma & Lu mostrando nossa loja moderna e acolhedora" className="w-full h-auto object-cover" src="https://i.pinimg.com/1200x/5a/d7/75/5ad775e9d1ece7bc62e5cfd32434ba65.jpg" />
+                <img 
+                  src="https://i.pinimg.com/1200x/5a/d7/75/5ad775e9d1ece7bc62e5cfd32434ba65.jpg" 
+                  alt="Interior da Óticas Ma & Lu mostrando nossa loja moderna e acolhedora" 
+                  className="w-full h-auto object-cover" 
+                />
               </div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-secondary/20 rounded-full z-0"></div>
               <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-full z-0"></div>
@@ -40,7 +53,7 @@ const AboutSection = () => {
           
           <AnimatedSection animation="fade-in-up" className="space-y-8">
             <div className="space-y-6">
-              <span className="inline-block text-sm font-semibold py-2 px-4 bg-primary/10 text-primary rounded-full">
+              <span className="inline-block text-sm font-semibold py-2 px-4 bg-primary/10 text-black rounded-full">
                 Nossa História
               </span>
               <h3 className="text-3xl font-bold text-gray-800 font-heading">
@@ -59,15 +72,17 @@ const AboutSection = () => {
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">
-              {features.map((feature, index) => <div key={feature.title} className="flex items-start space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-colors">
+              {features.map((feature, index) => (
+                <div key={feature.title} className="flex items-start space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-colors">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <feature.icon className="h-6 w-6 text-primary" />
+                    <feature.icon className="h-6 w-6 text-gray-800" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-1">{feature.title}</h4>
                     <p className="text-sm text-gray-600">{feature.description}</p>
                   </div>
-                </div>)}
+                </div>
+              ))}
             </div>
             
             <a href="#contato" className="btn-primary inline-block mt-6">
@@ -76,6 +91,8 @@ const AboutSection = () => {
           </AnimatedSection>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default AboutSection;

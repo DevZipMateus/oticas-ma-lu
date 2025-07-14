@@ -24,7 +24,7 @@ const TestimonialCard = ({
     )}>
       <div className="flex mb-4">
         {Array(rating).fill(0).map((_, i) => (
-          <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+          <Star key={i} className="w-5 h-5 text-gray-800 fill-gray-800" />
         ))}
       </div>
       
@@ -33,11 +33,11 @@ const TestimonialCard = ({
       </blockquote>
       
       <div className="flex items-center">
-        <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">
+        <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-black font-bold">
           {author.charAt(0)}
         </div>
         <div className="ml-3">
-          <div className="font-medium">{author}</div>
+          <div className="font-medium text-gray-800">{author}</div>
           <div className="text-sm text-gray-500">{role}</div>
         </div>
       </div>

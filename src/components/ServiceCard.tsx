@@ -20,7 +20,7 @@ const ServiceCard = ({ icon: Icon, title, description, features, className }: Se
         <Icon className="h-8 w-8 text-black" />
       </div>
       
-      <h3 className="text-2xl font-bold mb-4 text-gray-800 font-heading group-hover:text-primary transition-colors">
+      <h3 className="text-2xl font-bold mb-4 text-gray-800 font-heading group-hover:text-gray-800 transition-colors">
         {title}
       </h3>
       
@@ -36,7 +36,7 @@ const ServiceCard = ({ icon: Icon, title, description, features, className }: Se
           <ul className="space-y-2">
             {features.map((feature, index) => (
               <li key={index} className="flex items-center text-sm text-gray-600">
-                <Check className="h-4 w-4 text-primary mr-3 flex-shrink-0" />
+                <Check className="h-4 w-4 text-gray-800 mr-3 flex-shrink-0" />
                 {feature}
               </li>
             ))}

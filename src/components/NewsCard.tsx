@@ -30,7 +30,7 @@ const NewsCard = ({
           alt={title} 
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <div className="absolute top-3 left-3 bg-primary/90 text-white text-xs font-medium py-1 px-2 rounded">
+        <div className="absolute top-3 left-3 bg-primary/90 text-black text-xs font-medium py-1 px-2 rounded">
           {category}
         </div>
       </div>
@@ -41,7 +41,7 @@ const NewsCard = ({
           {date}
         </div>
         
-        <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">
+        <h3 className="text-lg font-bold mb-2 text-gray-800 group-hover:text-gray-800 transition-colors">
           {title}
         </h3>
         
@@ -49,7 +49,7 @@ const NewsCard = ({
           {excerpt}
         </p>
         
-        <a href="#" className="text-primary font-medium hover:underline inline-flex items-center">
+        <a href="#" className="text-gray-800 font-medium hover:text-gray-600 transition-colors inline-flex items-center">
           Ler mais
           <svg 
             className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" 

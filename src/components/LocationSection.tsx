@@ -24,7 +24,7 @@ const LocationSection = () => {
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <MapPin className="h-6 w-6 text-primary" />
+                      <MapPin className="h-6 w-6 text-gray-800" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-1">Endereço</h4>
@@ -35,11 +35,11 @@ const LocationSection = () => {
 
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                      <Phone className="h-6 w-6 text-primary" />
+                      <Phone className="h-6 w-6 text-gray-800" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-1">Telefone</h4>
-                      <a href="tel:+5511969543234" className="text-primary hover:text-primary/80 transition-colors">
+                      <a href="tel:+5511969543234" className="text-gray-800 hover:text-gray-600 transition-colors font-medium">
                         (11) 96954-3234
                       </a>
                     </div>
@@ -47,11 +47,11 @@ const LocationSection = () => {
 
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Mail className="h-6 w-6 text-primary" />
+                      <Mail className="h-6 w-6 text-gray-800" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-1">E-mail</h4>
-                      <a href="mailto:maelu.oticas@gmail.com" className="text-primary hover:text-primary/80 transition-colors break-all">
+                      <a href="mailto:maelu.oticas@gmail.com" className="text-gray-800 hover:text-gray-600 transition-colors font-medium break-all">
                         maelu.oticas@gmail.com
                       </a>
                     </div>
@@ -59,7 +59,7 @@ const LocationSection = () => {
 
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Clock className="h-6 w-6 text-primary" />
+                      <Clock className="h-6 w-6 text-gray-800" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-1">Horário de Funcionamento</h4>

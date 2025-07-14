@@ -113,7 +113,7 @@ const ContactSection = () => {
 
               <Button 
                 type="submit"
-                className="w-full py-4 text-lg font-semibold bg-primary hover:bg-primary/90 text-white rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+                className="w-full py-4 text-lg font-semibold bg-primary hover:bg-primary/90 text-black rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
               >
                 <Send className="mr-2 h-5 w-5" />
                 Enviar Mensagem via WhatsApp
@@ -126,14 +126,14 @@ const ContactSection = () => {
                 <div className="flex justify-center gap-6 mt-3">
                   <a 
                     href="tel:+5511969543234" 
-                    className="text-primary hover:text-primary/80 font-medium transition-colors"
+                    className="text-gray-800 hover:text-gray-600 font-medium transition-colors"
                   >
                     (11) 96954-3234
                   </a>
                   <span className="text-gray-300">|</span>
                   <a 
                     href="mailto:maelu.oticas@gmail.com" 
-                    className="text-primary hover:text-primary/80 font-medium transition-colors"
+                    className="text-gray-800 hover:text-gray-600 font-medium transition-colors"
                   >
                     E-mail
                   </a>
