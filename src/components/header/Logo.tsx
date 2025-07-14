@@ -20,7 +20,7 @@ const Logo = ({ scrolled }: LogoProps) => {
         <div
           className={cn(
             "font-bold transition-all duration-300 font-heading",
-            scrolled ? "text-xl text-primary" : "text-2xl text-black",
+            scrolled ? "text-xl text-black" : "text-2xl text-black",
             "hover:scale-105"
           )}
         >

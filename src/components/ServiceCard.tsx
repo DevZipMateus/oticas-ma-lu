@@ -16,8 +16,8 @@ const ServiceCard = ({ icon: Icon, title, description, features, className }: Se
       "glass-card rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group border-2 border-transparent hover:border-primary/20",
       className
     )}>
-      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-        <Icon className="h-8 w-8 text-white" />
+      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <Icon className="h-8 w-8 text-black" />
       </div>
       
       <h3 className="text-2xl font-bold mb-4 text-gray-800 font-heading group-hover:text-primary transition-colors">
