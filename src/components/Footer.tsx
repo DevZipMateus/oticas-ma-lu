@@ -10,9 +10,9 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/08cb2c1d-f8b4-42cd-97c3-25f91654de32.png" 
+                src="/lovable-uploads/d93cafa4-e948-4373-af4f-5e783db0b889.png" 
                 alt="Óticas Ma & Lu" 
-                className="h-12 w-12"
+                className="h-12 w-12 object-contain"
               />
               <div>
                 <h3 className="text-xl font-bold font-heading">Óticas Ma & Lu</h3>
