@@ -20,7 +20,7 @@ const Logo = ({ scrolled }: LogoProps) => {
         <div
           className={cn(
             "font-bold transition-all duration-300 font-heading",
-            scrolled ? "text-xl text-primary" : "text-2xl text-white",
+            scrolled ? "text-xl text-primary" : "text-2xl text-black",
             "hover:scale-105"
           )}
         >
@@ -28,7 +28,7 @@ const Logo = ({ scrolled }: LogoProps) => {
         </div>
         <div className={cn(
           "text-sm transition-all duration-300",
-          scrolled ? "text-gray-600" : "text-white/80"
+          scrolled ? "text-gray-600" : "text-black/80"
         )}>
           Cuidar da sua visão é a nossa missão
         </div>

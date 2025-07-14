@@ -18,7 +18,7 @@ const MobileMenuButton = ({ isMenuOpen, toggleMenu, scrolled }: MobileMenuButton
         "hover:scale-105 active:scale-95",
         scrolled 
           ? "bg-primary/10 text-primary hover:bg-primary/20"
-          : "bg-white/20 backdrop-blur-sm text-primary hover:bg-white/30"
+          : "bg-white/20 backdrop-blur-sm text-black hover:bg-white/30"
       )}
       aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
     >
