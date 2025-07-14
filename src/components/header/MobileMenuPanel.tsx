@@ -22,7 +22,7 @@ const MobileMenuPanel = ({ isMenuOpen, onClose, menuItems }: MobileMenuPanelProp
           <img 
             src="/lovable-uploads/d93cafa4-e948-4373-af4f-5e783db0b889.png" 
             alt="Óticas Ma & Lu" 
-            className="h-10 w-10 mr-3"
+            className="h-10 object-contain mr-3"
           />
           <div>
             <div className="text-lg font-bold text-primary font-heading">Óticas Ma & Lu</div>

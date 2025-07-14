@@ -12,8 +12,8 @@ const Logo = ({ scrolled }: LogoProps) => {
         src="/lovable-uploads/d93cafa4-e948-4373-af4f-5e783db0b889.png" 
         alt="Óticas Ma & Lu - Logo" 
         className={cn(
-          "transition-all duration-300",
-          scrolled ? "h-12 w-12" : "h-16 w-16"
+          "transition-all duration-300 object-contain",
+          scrolled ? "h-12" : "h-16"
         )}
       />
       <div className="ml-3">
