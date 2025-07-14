@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
-    const message = "Olá! Gostaria de saber mais sobre os serviços da Óticas Ma & Lu.";
+    const message = "Olá! Entrei em contato através do site e gostaria de saber mais sobre os serviços da Óticas Ma & Lu.";
     const whatsappUrl = `https://wa.me/5511969543234?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };

@@ -75,12 +75,12 @@ const LocationSection = () => {
 
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href="https://wa.me/5511969543234" 
+                  href="https://wa.me/5511969543234?text=Olá! Entrei em contato através do site da Óticas Ma & Lu e gostaria de agendar uma consulta." 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn-primary"
                 >
-                  Conversar no WhatsApp
+                  Agendar via WhatsApp
                 </a>
                 <a 
                   href="https://www.instagram.com/maeluoticas" 

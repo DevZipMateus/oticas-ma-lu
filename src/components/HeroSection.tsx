@@ -20,7 +20,7 @@ const HeroSection = () => {
           <AnimatedSection animation="fade-in-up" className="space-y-8">
             <div className="space-y-6">
               <span className="inline-block text-sm font-semibold py-2 px-4 bg-white/20 text-black rounded-full backdrop-blur-sm">
-                ✨ Especialistas em Saúde Visual
+                👓 Óticas Ma & Lu - Especialistas em Saúde Visual
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-black font-heading">
                 Cuidar da sua <br />

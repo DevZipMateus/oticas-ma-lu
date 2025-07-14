@@ -27,7 +27,7 @@ const ContactSection = () => {
     }
 
     // Create WhatsApp message
-    const whatsappMessage = `Olá! Meu nome é ${formData.name}. ${formData.message}`;
+    const whatsappMessage = `Olá! Meu nome é ${formData.name}. Entrei em contato através do site da Óticas Ma & Lu. ${formData.message}`;
     const whatsappUrl = `https://wa.me/5511969543234?text=${encodeURIComponent(whatsappMessage)}`;
     
     window.open(whatsappUrl, '_blank');
