@@ -6,8 +6,11 @@ const HeroSection = () => {
   return (
     <section 
       id="inicio" 
-      className="relative min-h-screen flex items-center hero-gradient overflow-hidden"
+      className="relative min-h-screen flex items-center overflow-hidden"
     >
+      {/* Animated Background */}
+      <div className="absolute inset-0 animated-hero-bg"></div>
+      
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 md:w-64 md:h-64 rounded-full bg-white/20"></div>
