@@ -8,8 +8,16 @@ const HeroSection = () => {
       id="inicio" 
       className="relative min-h-screen flex items-center overflow-hidden"
     >
-      {/* Animated Background */}
-      <div className="absolute inset-0 animated-hero-bg"></div>
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/lovable-uploads/bf6301e8-5467-4f61-afef-3ba66f07d254.png)'
+        }}
+      ></div>
+      
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
       
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
