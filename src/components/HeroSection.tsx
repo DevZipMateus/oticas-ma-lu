@@ -1,4 +1,3 @@
-
 import { Eye, Clock, Award } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
@@ -15,9 +14,6 @@ const HeroSection = () => {
           backgroundImage: 'url(/lovable-uploads/13dc2faa-1f98-40b9-bdca-912079ba0670.png)'
         }}
       ></div>
-      
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
       
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
