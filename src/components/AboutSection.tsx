@@ -41,8 +41,8 @@ const AboutSection = () => {
             <div className="relative">
               <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://i.pinimg.com/1200x/5a/d7/75/5ad775e9d1ece7bc62e5cfd32434ba65.jpg" 
-                  alt="Interior da Óticas Ma & Lu mostrando nossa loja moderna e acolhedora" 
+                  src="/lovable-uploads/cd76b6cd-6149-4d1b-b04b-a2dc90c828a8.png" 
+                  alt="Óculos da marca Ma & Lu mostrando qualidade e estilo das armações" 
                   className="w-full h-auto object-cover" 
                 />
               </div>
