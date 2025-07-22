@@ -17,7 +17,7 @@ const HeroSection = () => {
       ></div>
       
       {/* Semi-transparent white overlay */}
-      <div className="absolute inset-0 bg-white/80"></div>
+      <div className="absolute inset-0 bg-white/40"></div>
       
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
