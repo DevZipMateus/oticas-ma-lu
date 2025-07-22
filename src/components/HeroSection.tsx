@@ -38,7 +38,7 @@ const HeroSection = () => {
                 <span className="text-black drop-shadow-lg">visão é a nossa</span><br />
                 <span className="text-black drop-shadow-lg">missão</span>
               </h1>
-              <p className="text-xl text-black/90 max-w-2xl leading-relaxed">
+              <p className="text-xl text-black/90 max-w-2xl leading-relaxed font-medium">
                 Na Ótica Ma & Lu, oferecemos mais do que óculos: proporcionamos cuidado, 
                 atenção e qualidade para sua saúde visual com profissionais especializados 
                 e armações exclusivas.
