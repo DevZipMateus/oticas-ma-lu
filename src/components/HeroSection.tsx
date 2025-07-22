@@ -16,6 +16,9 @@ const HeroSection = () => {
         }}
       ></div>
       
+      {/* Semi-transparent white overlay */}
+      <div className="absolute inset-0 bg-white/80"></div>
+      
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 md:w-64 md:h-64 rounded-full bg-white/20"></div>
@@ -27,15 +30,15 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <AnimatedSection animation="fade-in-up" className="space-y-8">
             <div className="space-y-6">
-              <span className="inline-block text-sm font-semibold py-2 px-4 bg-white/20 text-white rounded-full backdrop-blur-sm">
+              <span className="inline-block text-sm font-semibold py-2 px-4 bg-white/20 text-black rounded-full backdrop-blur-sm">
                 👓 Óticas Ma & Lu - Especialistas em Saúde Visual
               </span>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white font-heading">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-black font-heading">
                 Cuidar da sua <br />
-                <span className="text-white drop-shadow-lg">visão é a nossa</span><br />
-                <span className="text-white drop-shadow-lg">missão</span>
+                <span className="text-black drop-shadow-lg">visão é a nossa</span><br />
+                <span className="text-black drop-shadow-lg">missão</span>
               </h1>
-              <p className="text-xl text-white/90 max-w-2xl leading-relaxed">
+              <p className="text-xl text-black/90 max-w-2xl leading-relaxed">
                 Na Ótica Ma & Lu, oferecemos mais do que óculos: proporcionamos cuidado, 
                 atenção e qualidade para sua saúde visual com profissionais especializados 
                 e armações exclusivas.
@@ -46,23 +49,23 @@ const HeroSection = () => {
               <a href="#contato" className="btn-primary">
                 Agendar Consulta
               </a>
-              <a href="#servicos" className="btn-outline border-white text-white hover:bg-primary hover:text-black">
+              <a href="#servicos" className="btn-outline border-black text-black hover:bg-primary hover:text-black">
                 Nossos Serviços
               </a>
             </div>
 
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-white font-heading">15+</div>
-                <div className="text-sm text-white/80">Anos de Experiência</div>
+                <div className="text-3xl font-bold text-black font-heading">15+</div>
+                <div className="text-sm text-black/80">Anos de Experiência</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white font-heading">1000+</div>
-                <div className="text-sm text-white/80">Clientes Satisfeitos</div>
+                <div className="text-3xl font-bold text-black font-heading">1000+</div>
+                <div className="text-sm text-black/80">Clientes Satisfeitos</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white font-heading">100%</div>
-                <div className="text-sm text-white/80">Qualidade</div>
+                <div className="text-3xl font-bold text-black font-heading">100%</div>
+                <div className="text-sm text-black/80">Qualidade</div>
               </div>
             </div>
           </AnimatedSection>
