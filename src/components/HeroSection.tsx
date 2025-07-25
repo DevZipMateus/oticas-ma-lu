@@ -17,9 +17,9 @@ const HeroSection = () => {
       ></div>
       
       {/* Semi-transparent white overlay */}
-      <div className="absolute inset-0 bg-white/40"></div>
+      <div className="absolute inset-0 bg-white/50"></div>
       
-      {/* Background Pattern - Ajustado para não causar overflow */}
+      {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 rounded-full bg-white/20 transform -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-1/3 right-1/3 w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full bg-white/15 transform translate-x-1/2 translate-y-1/2"></div>
@@ -29,43 +29,60 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <AnimatedSection animation="fade-in-up" className="space-y-6 sm:space-y-8 w-full">
-            <div className="space-y-4 sm:space-y-6">
-              <span className="inline-block text-xs sm:text-sm font-semibold py-2 px-3 sm:px-4 bg-white/20 text-black rounded-full backdrop-blur-sm">
+            <div className="space-y-6 sm:space-y-8">
+              <span className="inline-block text-sm sm:text-base font-medium py-3 px-6 bg-primary/90 text-black rounded-full backdrop-blur-sm shadow-lg border border-primary/20">
                 👓 Óticas Ma & Lu - Especialistas em Saúde Visual
               </span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-black font-heading">
-                Cuidar da sua <br />
-                <span className="text-black drop-shadow-lg">visão é a nossa</span><br />
-                <span className="text-black drop-shadow-lg">missão</span>
-              </h1>
-              <p className="text-base sm:text-lg md:text-xl text-black/90 max-w-2xl leading-relaxed font-semibold">
-                Na Ótica Ma & Lu, oferecemos mais do que óculos: proporcionamos cuidado, 
-                atenção e qualidade para sua saúde visual com profissionais especializados 
+              
+              <div className="space-y-4">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] text-gray-900 font-heading tracking-tight">
+                  Cuidar da sua{' '}
+                  <span className="text-gray-800 relative">
+                    visão
+                    <div className="absolute -bottom-2 left-0 w-full h-1 bg-primary/60 rounded-full"></div>
+                  </span>
+                </h1>
+                
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] text-gray-900 font-heading tracking-tight">
+                  é a nossa{' '}
+                  <span className="text-gray-800 relative">
+                    missão
+                    <div className="absolute -bottom-2 left-0 w-full h-1 bg-secondary/60 rounded-full"></div>
+                  </span>
+                </h2>
+              </div>
+              
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-700 max-w-2xl leading-relaxed font-medium">
+                Na Ótica Ma & Lu, oferecemos mais do que óculos: proporcionamos{' '}
+                <span className="text-gray-900 font-semibold">cuidado</span>,{' '}
+                <span className="text-gray-900 font-semibold">atenção</span> e{' '}
+                <span className="text-gray-900 font-semibold">qualidade</span>{' '}
+                para sua saúde visual com profissionais especializados 
                 e armações exclusivas.
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 w-full">
-              <a href="#contato" className="btn-primary text-center">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-6 w-full">
+              <a href="#contato" className="btn-primary text-center text-lg font-semibold">
                 Agendar Consulta
               </a>
-              <a href="#servicos" className="btn-outline border-black text-black hover:bg-primary hover:text-black text-center">
+              <a href="#servicos" className="btn-outline border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white text-center text-lg font-semibold">
                 Nossos Serviços
               </a>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-6 sm:pt-8 w-full">
+            <div className="grid grid-cols-3 gap-6 sm:gap-8 pt-8 sm:pt-10 w-full">
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-black font-heading">15+</div>
-                <div className="text-xs sm:text-sm text-black/80">Anos de Experiência</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 font-heading">15+</div>
+                <div className="text-sm sm:text-base text-gray-600 font-medium mt-1">Anos de Experiência</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-black font-heading">1000+</div>
-                <div className="text-xs sm:text-sm text-black/80">Clientes Satisfeitos</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 font-heading">1000+</div>
+                <div className="text-sm sm:text-base text-gray-600 font-medium mt-1">Clientes Satisfeitos</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-black font-heading">100%</div>
-                <div className="text-xs sm:text-sm text-black/80">Qualidade</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 font-heading">100%</div>
+                <div className="text-sm sm:text-base text-gray-600 font-medium mt-1">Qualidade</div>
               </div>
             </div>
           </AnimatedSection>
