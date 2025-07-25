@@ -74,7 +74,7 @@ const Header = () => {
           : 'bg-transparent py-3 sm:py-4'
       )}
     >
-      <div className="container mx-auto px-3 sm:px-4 flex justify-between items-center">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6 flex justify-between items-center max-w-7xl">
         <Logo scrolled={scrolled} />
         <DesktopNavigation menuItems={menuItems} scrolled={scrolled} />
         <MobileMenuButton 
